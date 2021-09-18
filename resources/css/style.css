@@ -5,7 +5,7 @@
     font-family: 'popins', sans-serif;
 }
 
-.container {
+.head {
     width: 100%;
     height: 50vh;
     background-image: linear-gradient(90deg, rgba(20, 19, 19, 0.5), rgba(139, 114, 114, 0.5)), url(../images/bg_image.jpeg);
@@ -74,6 +74,7 @@ nav ul li::after {
     bottom: -6px;
     transition: 0.5s;
 }
+
 nav ul li:hover:after {
     width: 100%;
 }
@@ -87,3 +88,223 @@ nav ul li:hover:after {
     -webkit-backdrop-filter: blur(10px);
     /*backdrop-filter: blur(15px);
 } */
+/* ------------------ SECTION ABOUT ------------------- */
+.about {
+    background-image: url(../images/bg_about.jpeg);
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    text-transform: uppercase;
+    color: #4e4e4e;
+}
+
+.section-title {
+    position: relative;
+    color: #3a6cf4;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    width: 140px;
+    height: 4px;
+    background: #0000006b;
+    transform: translateX(-50%);
+}
+
+.about .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about .content .col-left {
+    position: relative;
+    width: 45%;
+}
+
+.about .content .col-right {
+    position: relative;
+    width: 50%;
+}
+
+.about .content .col-left .img-card {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+}
+
+/* REDUIRE IMAGE */
+.about .content .col-left .img-card img {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+/* METTRE LE TTITRE EN FORME */
+.about .content .col-right .content-title {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #4e4e4e;
+}
+
+/* METTRE PARAGRAPH EN FORME */
+.about .content .col-right .text {
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* ---------------- ATOUT --------------------- */
+.atouts {
+    background-color: #000016;
+}
+
+.skills .title .section-title {
+    color: #ffd100;
+}
+
+.services-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 40px;
+}
+
+.service {
+    color: #fff;
+    background-color: #5abfc7;
+    padding: 20px;
+    text-align: center;
+    border-radius: 16px;
+    transition: all 300ms ease-in-out;
+}
+
+.service span {
+    color: #283844;
+    font-size: 32px;
+    transition: all 300ms ease-in-out;
+}
+
+.service h2 {
+    font-size: 29px;
+    margin-bottom: 16px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #f1f1f1;
+}
+
+.service:hover {
+    background-color: #dd9a05;
+}
+
+.service:hover span {
+    color: #fff;
+}
+
+.why_psy .title h1 {
+    padding: 30px;
+}
+
+.why_psy .title p {
+    text-align: center;
+    font-weight: 500;
+    font-style: oblique;
+    font-family: 'Indie Flower', cursive;
+}
+
+.pack {
+    box-shadow: 5px 0 5px rgb(0,0,0,0.3);
+    border-radius: 20px;
+}
+
+.pack h3 {
+    color: green;
+    font-weight: 400;
+}
+
+.pack h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left: 2px;
+}
+
+.pack-premium {
+    background-color: #72ef72;
+    margin-bottom: 20px;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #dacece;
+}
+
+.pack-title-premium {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: #fff;
+    color: green;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.pack-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-signup {
+    text-align: center;
+}
+
+.btn-pack {
+    background-color: azure;
+color: rgb(14, 73, 236);
+margin-bottom: 20px;
+}
+
+.btn-pack:hover {
+    background-color:rgb(14, 73, 236);
+    color: #fff;
+}
