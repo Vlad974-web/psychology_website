@@ -171,7 +171,7 @@
 /* METTRE PARAGRAPH EN FORME */
 .about .content .col-right .text {
     font-size: 18px;
-    font-family: 'Pacifico', cursive;
+    /*font-family: 'Pacifico', cursive;*/
     font-weight: 400;
     /*font-style: italic;*/
 }
@@ -233,8 +233,8 @@
 .why_psy .title p {
     text-align: center;
     font-weight: 500;
-    font-style: oblique;
-    font-family: 'Indie Flower', cursive;
+    /*font-style: oblique;
+    font-family: 'Indie Flower', cursive;*/
 }
 
 /* ---------------- PACK --------------------- */
@@ -311,11 +311,11 @@
 
 .clients blockquote {
     color: #fff;
-    font-family: 'Henny Penny', cursive;
+    /*font-family: 'Henny Penny', cursive;*/
     font-size: 18px;
     font-weight: bolder;
     padding: 5px;
-    font-style: italic;
+    /*font-style: italic;*/
     margin-top: 20px;
 }
 
